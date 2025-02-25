@@ -1,0 +1,39 @@
+/* Grundläggande styling för App */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0a0a1a, #1e1e3a);
+  /* Mörk rymd-bakgrund */
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+  /* Förhindrar att animationerna orsakar scroll */
+}
+
+.app {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Glas-effekt */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  /* Gör så att innehållet ligger över planeten */
+}
+
+/* App titel */
+.app__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #ff9800;
+  /* Orange text */
+  text-align: left;
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
